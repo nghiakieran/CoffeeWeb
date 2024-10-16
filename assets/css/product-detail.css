@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  //scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--pure-white);
+}
+:root {
+  /* color */
+  --primary-color: #341d0a;
+  --secondary-color: #b68834;
+  --pure-white: #fff;
+  --black-color: #222222;
+  --star-yellow: #ffa500;
+  /* font size */
+  --fs-h1: 6rem;
+  --fs-h2: 3.9rem;
+  --fs-h3: 1.8rem;
+  --fs-1-8: 1.8rem;
+  --fs-1-4: 1.4rem;
+  /* font weight */
+  --fw-very-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-500: 500;
+  --fw-bold: 600;
+  --fw-extra-bold: 700;
+  --fw-black: 900;
+  /* margin */
+  --common-margin-top: 8rem;
+  /* padding */
+  --common-padding-top: 20rem;
+  --common-padding-bottom: 20rem;
+}
+/* Section 1 */
+
+.section-1 {
+  background: url(../image/background/bg_1.jpg);
+  background-size: cover;
+  height: 68.1rem;
+  padding-top: var(--common-padding-top);
+}
+.section-1 .section-1-content h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  margin: 0.75rem 0 2.5rem;
+}
+.section-1 .section-1-content a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+.section-1 .section-1-content span {
+  color: #bfbfbf;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.section-1 .section-1-content p {
+  letter-spacing: 1px;
+}
+/* Section 2 Product-detail */
+.section-2 {
+  background-color: #1b1514e7;
+}
+.section-2 .section-2-content {
+  display: flex;
+  gap: 7rem;
+}
+
+.section-2 .section-2-content .section-2-content-right h3 {
+  text-transform: uppercase;
+}
+
+.section-2 .section-2-content .section-2-content-left,
+.section-2 .section-2-content .section-2-content-right {
+  flex-basis: 50%;
+}
+.section-2 .section-2-content .section-2-content-right .price {
+  color: var(--star-yellow);
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.section-2 .section-2-content .section-2-content-right .description {
+  font-size: var(--fs-1-8);
+  line-height: 1.8;
+  font-weight: var(--fw-light);
+  color: rgb(245, 255, 250, 0.7);
+}
+
+.section-2 .section-2-content-right-input-size {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-2 .section-2-content-right label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: var(--fs-1-8);
+  color: rgb(245, 255, 250, 0.7);
+  font-weight: var(--fw-light);
+}
+
+.section-2 .section-2-content-right-input-size .form-control {
+  display: block;
+  width: 35%;
+  //padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1b1514e7;
+  color: var(--secondary-color) !important;
+  font-size: var(--fs-1-4);
+  padding: 16px 18px;
+  //background: transparent;
+}
+:focus {
+  outline: 2px solid white;
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.section-2 .section-2-content-right-input-quantity {
+  display: flex;
+  flex-wrap: wrap;
+}

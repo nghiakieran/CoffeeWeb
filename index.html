@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dn Coffe</title>
+    <title>DN Coffee</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
         integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
         crossorigin='anonymous' />
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
         rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
@@ -20,16 +26,25 @@
         <div class="header">
             <div class="header-nav-container reponsive-container">
                 <div class="header-logo">
-                    <img src="./assets/image/logo-coffee/logo-coffee.png" alt="logo-coffe">
+                    <a href=""><img src="./assets/image/logo-coffee/logo-coffee.png" alt="logo-coffe"></a>
+                </div>
+                <div class="header-search">
+                    <form class="header-search-form">
+                        <span class="iconSearch"><i class="fa fa-search"></i></span>
+                        <input autocomplete="off" name="search" placeholder="Bạn muốn mua gì..." class="" value="">
+                        <i class="fa fa-times close-btn"></i>
+                    </form>
                 </div>
                 <div class="header-nav">
                     <ul class="header-nav-ul">
-                        <li><a class="white-clr" href="">Trang chủ</a></li>
-                        <li><a class="white-clr" href="">Giới thiệu</a></li>
-                        <li><a class="white-clr" href="">Menu</a></li>
+                        <li><a class="white-clr" href="/">Trang chủ</a></li>
+                        <li><a class="white-clr" href="#section-2">Giới thiệu</a></li>
+                        <li><a class="white-clr" href="./menu.html">Menu</a></li>
                         <li><a class="white-clr" href="">Đăng nhập</a></li>
                         <li><a class="white-clr" href="">Đăng ký</a></li>
                     </ul>
+                </div>
+                <div class="header-cart"><a href="#" class="white-clr "><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
         </div>
@@ -41,16 +56,130 @@
                     <span>Now you can feel the energy</span>
                     <h1>Start your day with <br />
                         a black Coffee</h1>
-                    <button>Buy now</button>
+                    <button onclick="window.location.href='menu.html';">Buy now</button>
                 </div>
             </section>
-            <!-- Section 2 Giới thiệu-->
-            <section class="section-2">
+            <!-- Section 2 Menu -->
+            <section class="section-2 common-padding text-center">
                 <div class="section-2-content reponsive-container">
-                    <div class="section-2-content-left">
+                    <div class="section-2-content-text ">
+                        <span>Khám phá</span>
+                        <h2>Sản phẩm nổi bật</h2>
+                    </div>
+                    <div class="section-2-content-menu">
+                        <div class="image-slider">
+                            <div class="image-item">
+                                <div class="image">
+                                    <a href="product-detail.html?id=1" class="product-detail-link"><img
+                                            src="./assets/image/menu/menu-1.jpg" alt="" /></a>
+                                </div>
+                                <div class="image-item-text"><a href="product-detail.html?id=1"
+                                        aria-label="Capuccino information"
+                                        class="white-clr product-detail-link">Capuccino</a>
+                                    <p class="text-about">Good espresso, even better foam on top</p>
+                                    <p class="price"><span>3.90€</span></p>
+                                    <p><a class="add-cart" aria-label="Add Capuccino to your cart">Add to cart</a></p>
+                                </div>
+                            </div>
+                            <div class="image-item">
+                                <div class="image">
+                                    <a href="product-detail.html?id=2" class="product-detail-link"
+                                        aria-label="Capuccino information"><img src="./assets/image/menu/menu-2.jpg"
+                                            alt="" /></a>
+                                </div>
+                                <div class="image-item-text ">
+                                    <a href="product-detail.html?id=2" aria-label="Creamy latte information"
+                                        class="white-clr product-detail-link">Creamy latte</a>
+                                    <p class="text-about">Classic espresso, infused with the kind of milk you love</p>
+                                    <p class="price"><span>3.90€</span></p>
+                                    <p><a class="add-cart" aria-label="Add Creamy latte to your cart">Add to cart</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image-item">
+                                <div class="image">
+                                    <a href="product-detail.html?id=3" class="product-detail-link"><img
+                                            src="./assets/image/menu/menu-3.jpg" alt="" /></a>
+                                </div>
+                                <div class="image-item-text ">
+                                    <a href="product-detail.html?id=3" aria-label="Americano information"
+                                        class="white-clr product-detail-link">Americano</a>
+                                    <p class="text-about">The classic.<br>The legend.</p>
+                                    <p class="price"><span>3.90€</span></p>
+                                    <p><a class="add-cart" aria-label="Add Americano to your cart">Add to cart</a></p>
+                                </div>
+                            </div>
+                            <div class="image-item">
+                                <div class="image">
+                                    <a href="product-detail.html?id=4" class="product-detail-link"><img
+                                            src="./assets/image/menu/menu-4.jpg" alt="" /></a>
+                                </div>
+                                <div class="image-item-text ">
+                                    <a href="product-detail.html?id=4" aria-label="Red eye information"
+                                        class="white-clr product-detail-link">Red eye</a>
+                                    <p class="text-about">Intense flavour, slow brewed to perfection</p>
+                                    <p class="price"><span>3.90€</span></p>
+                                    <p><a class="add-cart" aria-label="Add Red eye to your cart">Add to cart</a></p>
+                                </div>
+                            </div>
+                            <div class="image-item">
+                                <div class="image">
+                                    <a href="product-detail.html?id=1" class="product-detail-link"><img
+                                            src="./assets/image/menu/menu-1.jpg" alt="" /></a>
+                                </div>
+                                <div class="image-item-text"><a href="product-detail.html?id=1"
+                                        aria-label="Capuccino information"
+                                        class="white-clr product-detail-link">Capuccino</a>
+                                    <p class="text-about">Good espresso, even better foam on top</p>
+                                    <p class="price"><span>3.90€</span></p>
+                                    <p><a class="add-cart" aria-label="Add Capuccino to your cart">Add to cart</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-2-content-div">
+                        <p><a href="menu.html">View Full Menu</a></p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 3 Short Menu -->
+            <!-- <section class="section-3 common-padding">
+                <div class="section-3-content reponsive-container">
+                    <div class="section-3-content-left">
+                        <span>Discover</span>
+                        <h2>Our Menu</h2>
+                        <p class="white-clr">Far far away, behind the word mountains, far from the countries Vokalia and
+                            Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
+                            coast of the Semantics, a large language ocean.</p>
+                        <button onclick="window.location.href='menu.html';">View Full Menu</button>
+                    </div>
+                    <div class="section-3-content-right">
+                        <div class="menu-entry">
+                            <a href="#" class="img"
+                                style="background-image: url(./assets/image/short-menu/menu-1.jpg);"></a>
+                        </div>
+                        <div class="menu-entry">
+                            <a href="#" class="img"
+                                style="background-image: url(./assets/image/short-menu/menu-2.jpg);"></a>
+                        </div>
+                        <div class="menu-entry">
+                            <a href="#" class="img"
+                                style="background-image: url(./assets/image/short-menu/menu-3.jpg);"></a>
+                        </div>
+                        <div class="menu-entry">
+                            <a href="#" class="img"
+                                style="background-image: url(./assets/image/short-menu/menu-4.jpg);"></a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- Section 2 Giới thiệu-->
+            <section class="section-3 common-padding" id="section-3">
+                <div class="section-3-content reponsive-container">
+                    <div class="section-3-content-left">
                         <video src="assets/video/Coffee-video.mp4"></video>
                     </div>
-                    <div class="section-2-content-right">
+                    <div class="section-3-content-right">
                         <span>Live Coffee Making Process</span>
                         <h2 class="black-clr">We Telecast our Coffee Making Live</h2>
                         <h4 class="black-clr">We are here to listen from you deliver exellence</h4>
@@ -61,7 +190,7 @@
             </section>
         </div>
         <!-- Footer -->
-        <div class="footer common-padding">
+        <div class="footer">
             <div class="reponsive-container">
                 <div class="footer-about-div">
                     <h4>About Us</h4>
@@ -90,7 +219,11 @@
             </div>
         </div>
     </div>
-    <script src="./assets/js/index.js" type="module"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>

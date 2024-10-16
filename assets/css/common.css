@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--pure-white);
+}
+:root {
+  /* color */
+  --primary-color: #341d0a;
+  --secondary-color: #b68834;
+  --pure-white: #fff;
+  --black-color: #222222;
+  --star-yellow: #ffa500;
+  --darkbrown-color: #1b1514e7;
+  --grey-color: rgb(245, 255, 250, 0.7);
+  /* font size */
+  --fs-h1: 6rem;
+  --fs-h2: 3.9rem;
+  --fs-h3: 1.8rem;
+  --fs-1-8: 1.8rem;
+  --fs-1-4: 1.4rem;
+  --fs-20: 20px;
+  /* font weight */
+  --fw-very-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-500: 500;
+  --fw-bold: 600;
+  --fw-extra-bold: 700;
+  --fw-black: 900;
+  /* margin */
+  --common-margin-top: 8rem;
+  /* padding */
+  --common-padding-top: 20rem;
+  --common-padding-bottom: 20rem;
+}
+.white-clr {
+  color: var(--pure-white);
+}
+
+.black-clr {
+  color: var(--black-color);
+}
+
+.yellow-clr {
+  color: var(--star-yellow);
+}
+
+.common-padding {
+  padding-top: var(--common-padding-top);
+  padding-bottom: var(--common-padding-bottom);
+}
+.reponsive-container {
+  max-width: 1140px;
+  width: 90%;
+  margin: auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h2 {
+  font-size: var(--fs-h2);
+  line-height: 1.4;
+  font-weight: var(--fw-bold);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+}
+
+p,
+h4 {
+  font-size: var(--fs-1-4);
+}
+p {
+  font-weight: var(--fw-light);
+  line-height: 1.6;
+}
+.text-center {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}

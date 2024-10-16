@@ -1,0 +1,75 @@
+.footer {
+  padding-top: var(--common-padding-top);
+  background-image: url(../image/footer/footer-banner.webp);
+  margin-top: var(--common-margin-top);
+  background-size: cover;
+}
+.footer .reponsive-container {
+  display: flex;
+  padding: 5rem 0 10rem;
+  justify-content: space-between;
+}
+.footer .reponsive-container .footer-about-div {
+  flex-basis: 35%;
+}
+.footer .reponsive-container .footer-newsletter {
+  flex-basis: 30%;
+}
+
+.footer .reponsive-container .footer-follow-us {
+  flex-basis: 10%;
+}
+
+.footer .reponsive-container h4 {
+  font-size: 1.8rem;
+  font-weight: var(--fw-bold);
+}
+
+.footer .reponsive-container p {
+  margin: 2rem 0;
+}
+.footer-copyright-text span {
+  font-weight: var(--fw-extra-bold);
+  color: var(--secondary-color);
+}
+
+.footer-search-div {
+  position: relative;
+}
+
+.footer-search-div input {
+  padding: 0.9rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.footer-search-div button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 5rem;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.footer-search-div button .fa-arrow-right {
+  font-size: 1.6rem;
+  color: var(--pure-white);
+}
+
+input:focus {
+  outline: 0;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-links i {
+  font-size: var(--fs-1-8);
+  color: var(--pure-white);
+}
