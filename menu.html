@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/modal-root-buy-item.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
         integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
         crossorigin='anonymous' />
@@ -119,7 +120,7 @@
                             </div>
                             <div class="image-item">
                                 <div class="image">
-                                    <a href="" class=""><img src="./assets/image/menu/menu-1.jpg" alt="" /></a>
+                                    <a href="" class=""><img src="./assets/image/menu/menu-5.jpg" alt="" /></a>
                                 </div>
                                 <div class="image-item-text"><a href="" aria-label="Capuccino information"
                                         class="white-clr ">Capuccino</a>
@@ -131,7 +132,7 @@
                             </div>
                             <div class="image-item">
                                 <div class="image">
-                                    <a href="" class=""><img src="./assets/image/menu/menu-3.jpg" alt="" /></a>
+                                    <a href="" class=""><img src="./assets/image/menu/menu-6.jpg" alt="" /></a>
                                 </div>
                                 <div class="image-item-text"><a href="" aria-label="Capuccino information"
                                         class="white-clr ">Capuccino</a>
@@ -143,7 +144,7 @@
                             </div>
                             <div class="image-item">
                                 <div class="image">
-                                    <a href="" class=""><img src="./assets/image/menu/menu-2.jpg" alt="" /></a>
+                                    <a href="" class=""><img src="./assets/image/menu/menu-7.jpg" alt="" /></a>
                                 </div>
                                 <div class="image-item-text"><a href="" aria-label="Capuccino information"
                                         class="white-clr ">Capuccino</a>
@@ -160,13 +161,97 @@
             <!-- modal-root-buy-item -->
             <div id="modal-root" class="modal-root" style="display: none;"> <!-- Ban đầu ẩn modal -->
                 <div>
-                    <div class="modal" aria-modal="true" role="dialog">
+                    <div class="modal" id="modal" aria-modal="true" role="dialog">
                         <div class="modal-sub">
                             <button class="close" type="button">
-                                <span>X</span>
+                                <span class="white-clr">X</span>
                             </button>
                             <div class="modal-sub-option">
                                 <!-- Nội dung của modal ở đây -->
+                                <div class="modal-sub-option-sub black-clr">
+                                    <div class="content">
+                                        <div class="left">
+                                            <div class="image">
+                                                <img src="./assets/image/menu/menu-1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="top">
+                                                <h5>Capuccino</h5>
+                                                <p>Capuccino</p>
+                                                <div class="price-quantity">
+                                                    <div class="price">
+                                                        <div class="sale-price">55.000&nbsp;₫</div>
+                                                    </div>
+                                                    <div class="quantity">
+                                                        <div class="counter">
+                                                            <button type="button" class="decrease-button">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                    height="2px" viewBox="0 0 12 2">
+                                                                    <rect data-name="Rectangle 522" width="12"
+                                                                        height="2" rx="1" fill="#fff"></rect>
+                                                                </svg>
+                                                            </button>
+                                                            <span class="number">1</span>
+                                                            <button type="button" class="increase-button">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                    height="12px" viewBox="0 0 12 12">
+                                                                    <g id="Group_3351" data-name="Group 3351"
+                                                                        transform="translate(-1367 -190)">
+                                                                        <rect data-name="Rectangle 520" width="12"
+                                                                            height="2" rx="1"
+                                                                            transform="translate(1367 195)" fill="#fff">
+                                                                        </rect>
+                                                                        <rect data-name="Rectangle 521" width="12"
+                                                                            height="2" rx="1"
+                                                                            transform="translate(1374 190) rotate(90)"
+                                                                            fill="#fff"></rect>
+                                                                    </g>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right-size">
+                                                <h5>Chọn kích cỡ</h5>
+                                                <div class="option-body text-center">
+                                                    <div class="option-body-text selected" id="size-S">
+                                                        <div class="top">S</div>
+                                                        <div class="price">0&nbsp;₫</div>
+                                                    </div>
+                                                    <div class="option-body-text" id="size-M">
+                                                        <div class="top">M</div>
+                                                        <div class="price">0&nbsp;₫</div>
+                                                    </div>
+                                                    <div class="option-body-text" id="size-L">
+                                                        <div class="top">L</div>
+                                                        <div class="price">0&nbsp;₫</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-sub-option-buy-wrapper">
+                                        <div class="modal-sub-option-buy">
+                                            <button aria-label="Đặt mua" class="modal-sub-option-buy-button">
+                                                <div class="button-text">
+                                                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-vubbuv"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        data-testid="AddShoppingCartIcon">
+                                                        <path
+                                                            d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
+                                                        </path>
+                                                    </svg>
+                                                    <div class="text">
+                                                        <span>Thêm vào giỏ hàng : </span>
+                                                        <span class="price"> 1.550.000&nbsp;₫</span>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -207,6 +292,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/modal-root-buy-item.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 .section-1 {
   background: url(../image/banner/hero-section-banner.webp);
   background-size: cover;
-  height: 100vh;
+  height: 73.5rem;
   padding-top: var(--common-padding-top);
 }
 .section-1 .section-1-content span {
@@ -63,8 +63,10 @@
   margin-bottom: 20px;
 }
 .section-2 .section-2-content-menu .image-slider .image img {
-  width: 90%;
-  height: 80%;
+  /* width: 90%;
+  height: 80%; */
+  width: 236px;
+  height: 236px;
   object-fit: cover;
   border-radius: 6px;
   border: 1px solid #f5deb380;

@@ -1,0 +1,217 @@
+/* Modal root */
+#modal-root {
+  position: relative;
+  z-index: 50;
+}
+#modal-root .modal {
+  position: fixed;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+#modal-root .modal .modal-sub {
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //z-index: 40;
+}
+
+#modal-root .close {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-color: var(--secondary-color);
+  //color: rgb(13, 17, 54);
+  border: 2px solid rgb(255, 255, 255);
+  outline: 0px;
+  box-shadow: none;
+  position: fixed;
+  top: -13px;
+  right: -13px;
+  //z-index: 999;
+  cursor: pointer;
+  border-radius: 12px;
+}
+#modal-root .close > span {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+/* Modal sub content */
+#modal-root .modal-sub-option {
+  width: 604px;
+  max-width: 100%;
+  max-height: 520px;
+  padding: 30px;
+  min-height: 420px;
+}
+#modal-root .modal-sub-option-sub {
+  display: flex;
+  flex-direction: column;
+}
+#modal-root .modal-sub-option-sub .left {
+  width: 260px;
+  height: 280px;
+  margin-right: 24px;
+  background: rgb(236, 239, 241);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal-root .modal-sub-option-sub .left .image {
+  width: 200px;
+  height: 200px;
+}
+img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+#modal-root .modal-sub-option-sub .content {
+  display: flex;
+}
+#modal-root .modal-sub-option-sub .right {
+  width: calc(100% - 260px);
+}
+#modal-root .modal-sub-option-sub .right p {
+  padding: 10px 0;
+}
+
+#modal-root .right .price-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#modal-root .right .price-quantity .sale-price {
+  font-weight: bold;
+  line-height: 39px;
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+#modal-root .right .counter {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  align-items: center;
+  height: 30px;
+}
+#modal-root .right .counter button {
+  border: none;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 0.95;
+}
+#modal-root .right .counter span {
+  font-size: var(--fs-1-4);
+  pointer-events: none;
+}
+#modal-root .right .right-size {
+  margin: 18px 0;
+}
+#modal-root .right .right-size h5 {
+  font-weight: var(--fw-bold);
+  padding-bottom: 18px;
+}
+#modal-root .right-size .option-body {
+  display: flex;
+}
+#modal-root .right-size .option-body .option-body-text {
+  width: 84px;
+  height: 70px;
+  margin-right: 12px;
+  border: 1px solid rgb(236, 239, 241);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--fs-1-4);
+}
+#modal-root .option-body-text .top {
+  text-align: center;
+  // background: var(--pur-white);
+  height: 40px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-top: 6px;
+}
+
+#modal-root .option-body-text .price {
+  background: rgb(236, 239, 241);
+  text-align: center;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 12px;
+  height: 30px;
+  padding-top: 5px;
+}
+#modal-root .selected .top {
+  background: rgb(236, 239, 241);
+}
+#modal-root .selected .price {
+  background-color: var(--secondary-color);
+  color: rgb(255, 255, 255);
+  opacity: 0.95;
+  transition: all 0.2s linear;
+}
+
+/* Modal sub option buy button */
+#modal-root .modal-sub-option-buy-wrapper {
+  padding: 20px 0 0;
+}
+
+#modal-root .modal-sub-option-buy {
+  padding: 20px 0 0;
+}
+
+.modal-sub-option-buy-button {
+  opacity: 0.95;
+  transition: 0.35s ease-in-out;
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 14px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  height: 38px;
+}
+
+.modal-sub-option-buy-button .button-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-1-4);
+}
+.icon {
+  margin-right: 5px;
+}
+
+.text .price {
+  font-weight: var(--fw-regular);
+  padding-top: 2px;
+}
+.css-vubbuv {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  font-size: var(--fs-1-8);
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}

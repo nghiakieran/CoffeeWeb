@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DN Coffee</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+    <!-- Đường chéo bao ngoài -->
+    <div class="diagonal-background">
+        <div class="container">
+            <input type="checkbox" id="check">
+            <div class="login-container  black-clr">
+                <div class="image">
+                    <img src="./assets/image/menu/menu-6.jpg" alt="image-coffee">
+                </div>
+                <div class="login-form">
+                    <h2 class="text-center">Login</h2>
+                    <form action="" class="validate-form">
+                        <div class="wrap-input validate-input" data-validate="Username is required">
+                            <span class="label-input">Username</span>
+                            <input type="text" name="username" placeholder="Type your username" class="input">
+                        </div>
+                        <div class="wrap-input validate-input" data-validate="Password is required">
+                            <span class="label-input">Password</span>
+                            <input class="input" type="password" name="pass" placeholder="Type your password">
+                        </div>
+                        <div class="forget-pass text-right">
+                            <a href="#">
+                                Forgot password?
+                            </a>
+                        </div>
+                        <input type="submit" class="button white-clr" value="Login">
+                    </form>
+                    <div class="signup text-right">
+                        <span class="signup">Don't have an account?
+                            <label for="check">Signup</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="registration-container form">
+                <header>Signup</header>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email">
+                    <input type="password" placeholder="Create a password">
+                    <input type="password" placeholder="Confirm your password">
+                    <input type="button" class="button" value="Signup">
+                </form>
+                <div class="signup">
+                    <span class="signup">Already have an account?
+                        <label for="check">Login</label>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>

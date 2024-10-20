@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
 }
 html {
   font-size: 10px;
@@ -19,11 +20,15 @@ body {
   --black-color: #222222;
   --star-yellow: #ffa500;
   --darkbrown-color: #1b1514e7;
+  --grey-yellow: #c49b6e;
   --grey-color: rgb(245, 255, 250, 0.7);
+  --grey-form-color: #d9d9d9;
+  --warning-red-color: #c80000;
   /* font size */
   --fs-h1: 6rem;
   --fs-h2: 3.9rem;
   --fs-h3: 1.8rem;
+  --fs-h5: 2rem;
   --fs-1-8: 1.8rem;
   --fs-1-4: 1.4rem;
   --fs-20: 20px;
@@ -81,12 +86,20 @@ p,
 h4 {
   font-size: var(--fs-1-4);
 }
+
+h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-500);
+}
 p {
   font-weight: var(--fw-light);
   line-height: 1.6;
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 ul {
   list-style-type: none;

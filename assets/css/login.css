@@ -1,0 +1,187 @@
+/*------------------------------------------------------------------
+[ diagonal ]*/
+.diagonal-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.diagonal-background::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color); /* Màu của nền chéo */
+  clip-path: polygon(0 0, 100% 0, 100% 15%, 0% 100%);
+  z-index: -1;
+  content: "";
+}
+/*------------------------------------------------------------------
+[ Xử lý hiển thị form login, register]*/
+.container .registration-container {
+  display: none;
+}
+#check:checked ~ .registration-container {
+  display: block;
+}
+#check:checked ~ .login-container {
+  display: none;
+}
+#check {
+  display: none;
+}
+/*------------------------------------------------------------------
+[ Container]*/
+.diagonal-background .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+}
+
+.diagonal-background .container .login-container {
+  display: flex;
+  width: 800px;
+  height: 550px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*------------------------------------------------------------------
+[ Image]*/
+.login-container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.login-container .image {
+  flex-basis: 40%;
+}
+
+/*------------------------------------------------------------------
+[ Form]*/
+.login-container .login-form {
+  padding: 40px;
+  background-color: var(--pure-white);
+  flex-basis: 60%;
+  font-size: var(--fs-1-4);
+}
+
+.login-container .login-form h2 {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+/*------------------------------------------------------------------
+[ Input]*/
+.login-form .wrap-input {
+  width: 100%;
+  border-bottom: 2px solid var(--grey-form-color);
+  margin-bottom: 20px;
+}
+
+.wrap-input .input {
+  display: block;
+  height: 55px;
+  background: transparent;
+  padding: 0 7px 0 43px;
+  width: 100%;
+  border: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form .wrap-input .input:hover,
+.login-form .wrap-input .input:focus {
+  border-color: var(--grey-yellow); /* Đổi màu viền khi hover hoặc focus */
+  box-shadow: 0px 2px 6px rgba(196, 155, 110, 0.3); /* Hiệu ứng bóng mờ */
+}
+
+/*------------------------------------------------------------------
+[ Button]*/
+.login-form .button {
+  background: var(--grey-yellow);
+  height: 55px;
+  letter-spacing: 1px;
+  margin: 1.7rem 0;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 100%;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+}
+.login-form .button:hover {
+  background: var(--secondary-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------------------------------------------
+[ a + signup]*/
+
+.login-form .forget-pass a {
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--fs-1-4);
+  color: var(--black-color);
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.signup label:hover,
+.login-form .forget-pass a:hover {
+  color: var(--grey-yellow);
+  text-decoration: underline;
+  font-weight: var(--fw-extra-bold);
+}
+
+/*------------------------------------------------------------------
+[ Signup ]*/
+
+.signup label {
+  cursor: pointer;
+  font-weight: var(--fw-extra-bold);
+}
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  /* max-width: 70%; */
+  /* background-color: #fff; */
+  border: 1px solid var(--warning-red-color);
+  border-radius: 2px;
+  padding: 4px 10px;
+  bottom: calc((100% - 20px) / 2);
+  transform: translateY(50%);
+  right: 2px;
+  pointer-events: none;
+  color: var(--warning-red-color);
+  font-size: var(--fs-1-4);
+  line-height: 1.5;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+} */
+
+/* @media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+} */
