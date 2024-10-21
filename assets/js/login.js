@@ -6,20 +6,6 @@
     $('.button').on('click', function(){
         $('.validate-form').submit();
     });
-    
-     /*==================================================================
-    [ Focus input ]*/
-    // $('.input').each(function(){
-    //     $(this).on('blur', function(){
-    //         if($(this).val().trim() != "") {
-    //             $(this).addClass('has-val');
-    //         }
-    //         else {
-    //             $(this).removeClass('has-val');
-    //         }
-    //     })    
-    // })
-  
     /*==================================================================
     [ Validate ]*/
     let input = $('.validate-input .input');
@@ -33,11 +19,6 @@
                 check = false;
             }
         }
-        // // Ngăn chặn hành động submit mặc định nếu có lỗi
-        // if (!check) {
-        //     event.preventDefault();
-        // }
-    
         return check;
     });
 

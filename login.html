@@ -13,11 +13,13 @@
     <!-- Đường chéo bao ngoài -->
     <div class="diagonal-background">
         <div class="container">
+            <!-- Check login register -->
             <input type="checkbox" id="check">
-            <div class="login-container  black-clr">
+            <div class="login-container black-clr">
                 <div class="image">
                     <img src="./assets/image/menu/menu-6.jpg" alt="image-coffee">
                 </div>
+                <!-- Form login -->
                 <div class="login-form">
                     <h2 class="text-center">Login</h2>
                     <form action="" class="validate-form">
@@ -42,19 +44,51 @@
                         </span>
                     </div>
                 </div>
+                <div class="home-icon">
+                    <a href="/">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="HomeOutlinedIcon"
+                            style="font-size: 35px; color: grey;">
+                            <path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3z">
+                            </path>
+                        </svg></a>
+                </div>
             </div>
-            <div class="registration-container form">
-                <header>Signup</header>
-                <form action="#">
-                    <input type="text" placeholder="Enter your email">
-                    <input type="password" placeholder="Create a password">
-                    <input type="password" placeholder="Confirm your password">
-                    <input type="button" class="button" value="Signup">
-                </form>
-                <div class="signup">
-                    <span class="signup">Already have an account?
-                        <label for="check">Login</label>
-                    </span>
+            <!-- Form register -->
+            <div class="register-container black-clr">
+                <div class="image">
+                    <img src="./assets/image/menu/menu-6.jpg" alt="image-coffee">
+                </div>
+                <div class="register-form">
+                    <h2 class="text-center">Signup</h2>
+                    <form action="#" class="validate-form">
+                        <div class="wrap-input validate-input" data-validate="Username already exists">
+                            <span class="">Username</span>
+                            <input class="input" type="text" name="username" placeholder="Create your username">
+                        </div>
+                        <div class="wrap-input" data-validate="Password cannot be empty">
+                            <span class="">Password</span>
+                            <div class="border-input">
+                                <input class="input" type="password" name="pass" placeholder="Create a password">
+                            </div>
+                            <input class="input" type="password" name="pass" placeholder="Confirm your password">
+                        </div>
+                        <input type="submit" class="button white-clr" value="Signup">
+                    </form>
+                    <div class="signup text-right">
+                        <span class="signup">Already have an account?
+                            <label for="check">Login</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="home-icon">
+                    <a href="/">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="HomeOutlinedIcon"
+                            style="font-size: 35px; color: grey;">
+                            <path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3z">
+                            </path>
+                        </svg></a>
                 </div>
             </div>
         </div>
