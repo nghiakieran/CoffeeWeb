@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: none;
 }
 html {
   font-size: 10px;
@@ -17,12 +16,15 @@ body {
   --primary-color: #341d0a;
   --secondary-color: #b68834;
   --pure-white: #fff;
+  --pale-10-white: rgba(255, 255, 255, 0.1);
   --black-color: #222222;
   --star-yellow: #ffa500;
   --darkbrown-color: #1b1514e7;
   --grey-yellow: #c49b6e;
   --grey-color: rgb(245, 255, 250, 0.7);
-  --grey-form-color: #d9d9d9;
+  --grey-border: #d9d9d9;
+  --light-grey: rgb(241, 241, 241);
+  --grey-bg-img-color: rgb(236, 239, 241);
   --warning-red-color: #c80000;
   /* font size */
   --fs-h1: 6rem;
@@ -32,6 +34,7 @@ body {
   --fs-1-8: 1.8rem;
   --fs-1-4: 1.4rem;
   --fs-20: 20px;
+  --fs-24: 24px;
   /* font weight */
   --fw-very-light: 200;
   --fw-light: 300;
@@ -46,18 +49,16 @@ body {
   --common-padding-top: 20rem;
   --common-padding-bottom: 20rem;
 }
+/* Common class */
 .white-clr {
   color: var(--pure-white);
 }
-
 .black-clr {
   color: var(--black-color);
 }
-
 .yellow-clr {
   color: var(--star-yellow);
 }
-
 .common-padding {
   padding-top: var(--common-padding-top);
   padding-bottom: var(--common-padding-bottom);
@@ -66,6 +67,22 @@ body {
   max-width: 1140px;
   width: 90%;
   margin: auto;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 /* icon */
 .css-vubbuv {
@@ -87,17 +104,14 @@ h2 {
   line-height: 1.4;
   font-weight: var(--fw-bold);
 }
-
 h3 {
   font-size: var(--fs-h3);
   font-weight: var(--fw-bold);
 }
-
 p,
 h4 {
   font-size: var(--fs-1-4);
 }
-
 h5 {
   font-size: var(--fs-h5);
   font-weight: var(--fw-500);
@@ -106,15 +120,35 @@ p {
   font-weight: var(--fw-light);
   line-height: 1.6;
 }
-.text-center {
-  text-align: center;
-}
-.text-right {
-  text-align: right;
-}
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+}
+/* transition */
+.icon-trans {
+  color: var(--pure-white);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.icon-trans:hover {
+  color: var(--star-yellow);
+  transform: scale(1.1);
+}
+.img-trans {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.img-trans:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.a-trans {
+  color: var(--pure-white);
+  padding: 10px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+.a-trans:hover {
+  color: var(--star-yellow);
+  border-bottom: 2px solid var(--star-yellow);
 }

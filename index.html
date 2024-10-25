@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DN Coffee</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
         integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
         crossorigin='anonymous' />
@@ -24,34 +24,38 @@
     <div id="app">
         <!-- Header -->
         <div class="header">
-            <div class="header-nav-container reponsive-container">
+            <div class="header-nav-container reponsive-container flex-space-between">
                 <div class="header-logo">
-                    <a href=""><img src="./assets/image/logo-coffee/logo-coffee.png" alt="logo-coffe"></a>
+                    <a href="/"><img class="img-trans" src="./assets/image/logo-coffee/logo-coffee.png"
+                            alt="logo-coffee"></a>
                 </div>
+                <!-- Header Search-->
                 <div class="header-search">
                     <form class="header-search-form">
-                        <span class="iconSearch"><i class="fa fa-search"></i></span>
+                        <span class="iconSearch"><i class="fa fa-search icon-trans"></i></span>
                         <input autocomplete="off" name="search" placeholder="Bạn muốn mua gì..." class="" value="">
-                        <i class="fa fa-times close-btn"></i>
+                        <i class="fa fa-times close-btn icon-trans"></i>
                     </form>
                 </div>
+                <!-- Header Nav-->
                 <div class="header-nav">
                     <ul class="header-nav-ul">
-                        <li><a class="white-clr" href="/">Trang chủ</a></li>
-                        <li><a class="white-clr" href="#section-2">Giới thiệu</a></li>
-                        <li><a class="white-clr" href="./menu.html">Menu</a></li>
-                        <li><a class="white-clr" href="./login.html">Đăng nhập</a></li>
-                        <li><a class="white-clr" href="">Đăng ký</a></li>
+                        <li><a class="a-trans" href="#section-1">Trang chủ</a></li>
+                        <li><a class="a-trans" href="#section-3">Giới thiệu</a></li>
+                        <li><a class="a-trans" href="./menu.html">Menu</a></li>
+                        <li><a class="a-trans" href="./login.html">Đăng nhập</a></li>
+                        <li><a class="a-trans" href="">Đăng ký</a></li>
                     </ul>
                 </div>
-                <div class="header-cart"><a href="#" class="white-clr "><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="header-cart">
+                    <a href="./cart.html" class="white-clr "><i class="fa-solid fa-cart-shopping icon-trans"></i></a>
                 </div>
             </div>
         </div>
         <!-- Content -->
         <div class="content">
-            <!-- Section 1 Trang chủ-->
-            <section class="section-1">
+            <!-- Section 1 Home-->
+            <section class="section-1" id="section-1">
                 <div class="section-1-content reponsive-container">
                     <span>Now you can feel the energy</span>
                     <h1>Start your day with <br />
@@ -62,7 +66,7 @@
             <!-- Section 2 Menu -->
             <section class="section-2 common-padding text-center">
                 <div class="section-2-content reponsive-container">
-                    <div class="section-2-content-text ">
+                    <div class="section-2-content-text">
                         <span>Khám phá</span>
                         <h2>Sản phẩm nổi bật</h2>
                     </div>
@@ -70,25 +74,23 @@
                         <div class="image-slider">
                             <div class="image-item">
                                 <div class="image">
-                                    <a href="product-detail.html?id=1" class="product-detail-link"><img
-                                            src="./assets/image/menu/menu-1.jpg" alt="" /></a>
+                                    <a href="" class="product-detail-link"><img src="./assets/image/menu/menu-1.jpg"
+                                            alt="item-image" /></a>
                                 </div>
-                                <div class="image-item-text"><a href="product-detail.html?id=1"
-                                        aria-label="Capuccino information"
-                                        class="white-clr product-detail-link">Capuccino</a>
+                                <div class="image-item-text"><a href="" aria-label="Cappuccino information"
+                                        class="white-clr product-detail-link">Cappuccino</a>
                                     <p class="text-about">Good espresso, even better foam on top</p>
                                     <p class="price"><span>3.90€</span></p>
-                                    <p><a class="add-cart" aria-label="Add Capuccino to your cart">Add to cart</a></p>
+                                    <p><a class="add-cart" aria-label="Add Cappuccino to your cart">Add to cart</a></p>
                                 </div>
                             </div>
                             <div class="image-item">
                                 <div class="image">
-                                    <a href="product-detail.html?id=2" class="product-detail-link"
-                                        aria-label="Capuccino information"><img src="./assets/image/menu/menu-2.jpg"
-                                            alt="" /></a>
+                                    <a href="" class="product-detail-link" aria-label="Cappuccino information"><img
+                                            src="./assets/image/menu/menu-2.jpg" alt="item-image" /></a>
                                 </div>
-                                <div class="image-item-text ">
-                                    <a href="product-detail.html?id=2" aria-label="Creamy latte information"
+                                <div class="image-item-text">
+                                    <a href="" aria-label="Creamy latte information"
                                         class="white-clr product-detail-link">Creamy latte</a>
                                     <p class="text-about">Classic espresso, infused with the kind of milk you love</p>
                                     <p class="price"><span>3.90€</span></p>
@@ -98,11 +100,11 @@
                             </div>
                             <div class="image-item">
                                 <div class="image">
-                                    <a href="product-detail.html?id=3" class="product-detail-link"><img
-                                            src="./assets/image/menu/menu-3.jpg" alt="" /></a>
+                                    <a href="" class="product-detail-link"><img src="./assets/image/menu/menu-3.jpg"
+                                            alt="item-image" /></a>
                                 </div>
                                 <div class="image-item-text ">
-                                    <a href="product-detail.html?id=3" aria-label="Americano information"
+                                    <a href="" aria-label="Americano information"
                                         class="white-clr product-detail-link">Americano</a>
                                     <p class="text-about">The classic.<br>The legend.</p>
                                     <p class="price"><span>3.90€</span></p>
@@ -111,11 +113,11 @@
                             </div>
                             <div class="image-item">
                                 <div class="image">
-                                    <a href="product-detail.html?id=4" class="product-detail-link"><img
-                                            src="./assets/image/menu/menu-4.jpg" alt="" /></a>
+                                    <a href="" class="product-detail-link"><img src="./assets/image/menu/menu-4.jpg"
+                                            alt="item-image" /></a>
                                 </div>
                                 <div class="image-item-text ">
-                                    <a href="product-detail.html?id=4" aria-label="Red eye information"
+                                    <a href="" aria-label="Red eye information"
                                         class="white-clr product-detail-link">Red eye</a>
                                     <p class="text-about">Intense flavour, slow brewed to perfection</p>
                                     <p class="price"><span>3.90€</span></p>
@@ -124,60 +126,28 @@
                             </div>
                             <div class="image-item">
                                 <div class="image">
-                                    <a href="product-detail.html?id=1" class="product-detail-link"><img
-                                            src="./assets/image/menu/menu-5.jpg" alt="" /></a>
+                                    <a href="" class="product-detail-link"><img src="./assets/image/menu/menu-5.jpg"
+                                            alt="item-image" /></a>
                                 </div>
-                                <div class="image-item-text"><a href="product-detail.html?id=1"
-                                        aria-label="Capuccino information"
-                                        class="white-clr product-detail-link">Capuccino</a>
+                                <div class="image-item-text"><a href="" aria-label="Cappuccino information"
+                                        class="white-clr product-detail-link">Cappuccino</a>
                                     <p class="text-about">Good espresso, even better foam on top</p>
                                     <p class="price"><span>3.90€</span></p>
-                                    <p><a class="add-cart" aria-label="Add Capuccino to your cart">Add to cart</a></p>
+                                    <p><a class="add-cart" aria-label="Add Cappuccino to your cart">Add to cart</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="section-2-content-div">
-                        <p><a href="menu.html">View Full Menu</a></p>
+                    <div class="view-full-button">
+                        <p><a href="./menu.html">View Full Menu</a></p>
                     </div>
                 </div>
             </section>
-            <!-- Section 3 Short Menu -->
-            <!-- <section class="section-3 common-padding">
-                <div class="section-3-content reponsive-container">
-                    <div class="section-3-content-left">
-                        <span>Discover</span>
-                        <h2>Our Menu</h2>
-                        <p class="white-clr">Far far away, behind the word mountains, far from the countries Vokalia and
-                            Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
-                            coast of the Semantics, a large language ocean.</p>
-                        <button onclick="window.location.href='menu.html';">View Full Menu</button>
-                    </div>
-                    <div class="section-3-content-right">
-                        <div class="menu-entry">
-                            <a href="#" class="img"
-                                style="background-image: url(./assets/image/short-menu/menu-1.jpg);"></a>
-                        </div>
-                        <div class="menu-entry">
-                            <a href="#" class="img"
-                                style="background-image: url(./assets/image/short-menu/menu-2.jpg);"></a>
-                        </div>
-                        <div class="menu-entry">
-                            <a href="#" class="img"
-                                style="background-image: url(./assets/image/short-menu/menu-3.jpg);"></a>
-                        </div>
-                        <div class="menu-entry">
-                            <a href="#" class="img"
-                                style="background-image: url(./assets/image/short-menu/menu-4.jpg);"></a>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- Section 2 Giới thiệu-->
+            <!-- Section 3 About-->
             <section class="section-3 common-padding" id="section-3">
                 <div class="section-3-content reponsive-container">
                     <div class="section-3-content-left">
-                        <video src="assets/video/Coffee-video.mp4"></video>
+                        <video src="./assets/video/Coffee-video.mp4"></video>
                     </div>
                     <div class="section-3-content-right">
                         <span>Live Coffee Making Process</span>
@@ -192,28 +162,28 @@
         <!-- Footer -->
         <div class="footer">
             <div class="reponsive-container">
-                <div class="footer-about-div">
-                    <h4>About Us</h4>
+                <div class="footer-about">
+                    <h3>About Us</h3>
                     <p>Explore our passion-perfected coffee blends and savor the journey with every rich, flavorful
                         cup. Welcome to our coffee family.</p>
-                    <p class="footer-copyright-text">Copyright ©2024 <span>Techie Andrew</span> | All rights
+                    <p class="footer-copyright-text">Copyright ©2024 <span>Nghia Kieran</span> | All rights
                         reserved</p>
                 </div>
                 <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
+                    <h3>Newsletter</h3>
                     <p>Stay updates with our latest news</p>
-                    <div class="footer-search-div">
+                    <div class="footer-search">
                         <input type="search" placeholder="Enter Email">
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <button><i class="fa-solid fa-arrow-right icon-trans "></i></button>
                     </div>
                 </div>
                 <div class="footer-follow-us">
-                    <h4>Follow Us</h4>
+                    <h3>Follow Us</h3>
                     <p>Let us be social</p>
-                    <div class="footer-social-links">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <div class="footer-social-links flex-space-between">
+                        <a href="#"><i class="fa-brands fa-instagram icon-trans"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook icon-trans"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin icon-trans"></i></a>
                     </div>
                 </div>
             </div>

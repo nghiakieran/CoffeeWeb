@@ -1,24 +1,23 @@
 /*------------------------------------------------------------------
-[ diagonal ]*/
+[ Diagonal ]*/
 .diagonal-background {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-
 .diagonal-background::before {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--secondary-color); /* Màu của nền chéo */
+  background-color: var(--secondary-color);
   clip-path: polygon(0 0, 100% 0, 100% 15%, 0% 100%);
   z-index: -1;
   content: "";
 }
 /*------------------------------------------------------------------
-[ Xử lý hiển thị form login, register]*/
+[ Show form login, register]*/
 .container .register-container {
   display: none;
 }
@@ -34,14 +33,11 @@
 /*------------------------------------------------------------------
 [ Container]*/
 .diagonal-background .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  z-index: 1;
+  // z-index: 1;
 }
 #check:checked ~ .register-container,
-.diagonal-background .container .login-container {
+.login-container {
   display: flex;
   width: 800px;
   height: 550px;
@@ -50,7 +46,6 @@
   overflow: hidden;
   position: relative;
 }
-
 /*------------------------------------------------------------------
 [ Image]*/
 .register-container .image img,
@@ -63,7 +58,6 @@
 .login-container .image {
   flex-basis: 40%;
 }
-
 /*------------------------------------------------------------------
 [ Form]*/
 .register-container .register-form,
@@ -73,7 +67,6 @@
   flex-basis: 60%;
   font-size: var(--fs-1-4);
 }
-
 .register-container .register-form h2,
 .login-container .login-form h2 {
   color: var(--secondary-color);
@@ -84,12 +77,11 @@
 .register-form .wrap-input,
 .login-form .wrap-input {
   width: 100%;
-  border-bottom: 2px solid var(--grey-form-color);
+  border-bottom: 2px solid var(--grey-border);
   margin-bottom: 20px;
 }
-
 .register-form .border-input {
-  border-bottom: 2px solid var(--grey-form-color);
+  border-bottom: 2px solid var(--grey-border);
 }
 .wrap-input .input {
   display: block;
@@ -98,73 +90,66 @@
   padding: 0 7px 0 43px;
   width: 100%;
   border: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.2s linear;
 }
-
-.register-form .wrap-input .input:hover,
-.register-form .wrap-input .input:focus,
-.login-form .wrap-input .input:hover,
-.login-form .wrap-input .input:focus {
-  border-color: var(--grey-yellow); /* Đổi màu viền khi hover hoặc focus */
-  box-shadow: 0px 2px 6px rgba(196, 155, 110, 0.3); /* Hiệu ứng bóng mờ */
+.wrap-input .input:hover,
+.wrap-input .input:focus,
+.wrap-input .input:hover,
+.wrap-input .input:focus {
+  border-color: var(--grey-yellow);
+  box-shadow: 0px 1px 4px var(--grey-yellow);
+  outline: none;
 }
-
 /*------------------------------------------------------------------
 [ Button]*/
 .register-form .button,
 .login-form .button {
-  background: var(--grey-yellow);
+  background-color: var(--grey-yellow);
+  box-shadow: 0px 1px 4px var(--grey-yellow);
   height: 55px;
   letter-spacing: 1px;
   margin: 1.7rem 0;
   cursor: pointer;
-  transition: 0.4s;
   width: 100%;
   border: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   text-transform: uppercase;
 }
-
 .register-form .button:hover,
 .login-form .button:hover {
   background: var(--secondary-color);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 10px var(--grey-yellow);
 }
-
 /*------------------------------------------------------------------
-[ a + signup  forget-pass]*/
-
+[ a signup - forget-pass]*/
 .login-form .forget-pass a {
   font-weight: var(--fw-extra-bold);
   font-size: var(--fs-1-4);
   color: var(--black-color);
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
-
 .signup label:hover,
 .login-form .forget-pass a:hover {
   color: var(--grey-yellow);
   text-decoration: underline;
   font-weight: var(--fw-extra-bold);
 }
-
 /*------------------------------------------------------------------
 [ Signup ]*/
-
 .signup label {
   cursor: pointer;
   font-weight: var(--fw-extra-bold);
 }
-
 /*------------------------------------------------------------------
 [ Home-Icon ]*/
-
 .home-icon {
   position: absolute;
   right: 0;
   padding: 10px;
 }
-
+.home-icon svg:hover {
+  fill: var(--secondary-color);
+}
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
@@ -175,8 +160,6 @@
 .alert-validate::before {
   content: attr(data-validate);
   position: absolute;
-  /* max-width: 70%; */
-  /* background-color: #fff; */
   border: 1px solid var(--warning-red-color);
   border-radius: 2px;
   padding: 4px 10px;
@@ -196,15 +179,3 @@
   visibility: visible;
   opacity: 1;
 }
-
-/* .alert-validate:hover:before {
-  visibility: visible;
-  opacity: 1;
-} */
-
-/* @media (max-width: 992px) {
-  .alert-validate::before {
-    visibility: visible;
-    opacity: 1;
-  }
-} */

@@ -12,7 +12,7 @@
   left: 0;
 }
 #modal-root .modal .modal-sub {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--pure-white);
   border-radius: 12px;
   position: absolute;
   top: 50%;
@@ -26,14 +26,12 @@
   height: 24px;
   display: block;
   background-color: var(--secondary-color);
-  //color: rgb(13, 17, 54);
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid var(--pure-white);
   outline: 0px;
   box-shadow: none;
   position: fixed;
   top: -13px;
   right: -13px;
-  //z-index: 999;
   cursor: pointer;
   border-radius: 12px;
 }
@@ -57,7 +55,7 @@
   width: 260px;
   height: 280px;
   margin-right: 24px;
-  background: rgb(236, 239, 241);
+  background: var(--grey-bg-img-color);
   border-radius: 16px;
   display: flex;
   justify-content: center;
@@ -87,9 +85,9 @@ img {
   align-items: center;
 }
 #modal-root .right .price-quantity .sale-price {
-  font-weight: bold;
+  font-weight: var(--fw-bold);
   line-height: 39px;
-  font-size: 24px;
+  font-size: var(--fs-24);
   color: var(--secondary-color);
 }
 #modal-root .right .counter {
@@ -128,7 +126,7 @@ img {
   width: 84px;
   height: 70px;
   margin-right: 12px;
-  border: 1px solid rgb(236, 239, 241);
+  border: 1px solid var(--grey-bg-img-color);
   border-radius: 4px;
   cursor: pointer;
   font-size: var(--fs-1-4);
@@ -143,7 +141,7 @@ img {
 }
 
 #modal-root .option-body-text .price {
-  background: rgb(236, 239, 241);
+  background: var(--grey-bg-img-color);
   text-align: center;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -152,11 +150,11 @@ img {
   padding-top: 5px;
 }
 #modal-root .selected .top {
-  background: rgb(236, 239, 241);
+  background: var(--grey-bg-img-color);
 }
 #modal-root .selected .price {
   background-color: var(--secondary-color);
-  color: rgb(255, 255, 255);
+  color: var(--pure-white);
   opacity: 0.95;
   transition: all 0.2s linear;
 }

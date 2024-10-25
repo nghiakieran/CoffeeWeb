@@ -9,22 +9,19 @@
   padding: 5rem 0 10rem;
   justify-content: space-between;
 }
-.footer .reponsive-container .footer-about-div {
+.footer-about {
   flex-basis: 35%;
 }
-.footer .reponsive-container .footer-newsletter {
+.footer-newsletter {
   flex-basis: 30%;
 }
-
-.footer .reponsive-container .footer-follow-us {
+.footer-follow-us {
   flex-basis: 10%;
 }
-
 .footer .reponsive-container h4 {
-  font-size: 1.8rem;
+  font-size: var(--fs-1-8);
   font-weight: var(--fw-bold);
 }
-
 .footer .reponsive-container p {
   margin: 2rem 0;
 }
@@ -32,18 +29,15 @@
   font-weight: var(--fw-extra-bold);
   color: var(--secondary-color);
 }
-
-.footer-search-div {
+.footer-search {
   position: relative;
 }
-
-.footer-search-div input {
+.footer-search input {
   padding: 0.9rem;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: var(--fs-1-8);
 }
-
-.footer-search-div button {
+.footer-search button {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -54,21 +48,16 @@
   background-color: var(--secondary-color);
   cursor: pointer;
 }
-
-.footer-search-div button .fa-arrow-right {
-  font-size: 1.6rem;
+.footer-search button:hover {
+  background-color: var(--grey-yellow);
+}
+.footer-search button .fa-arrow-right {
+  font-size: var(--fs-1-8);
   color: var(--pure-white);
 }
-
 input:focus {
   outline: 0;
 }
-
-.footer-social-links {
-  display: flex;
-  justify-content: space-between;
-}
-
 .footer-social-links i {
   font-size: var(--fs-1-8);
   color: var(--pure-white);
