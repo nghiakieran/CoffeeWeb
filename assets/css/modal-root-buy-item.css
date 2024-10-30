@@ -1,4 +1,5 @@
-/* Modal root */
+/*------------------------------------------------------------------
+[  Modal root  ]*/
 #modal-root {
   position: relative;
   z-index: 50;
@@ -11,17 +12,17 @@
   top: 0;
   left: 0;
 }
-#modal-root .modal .modal-sub {
+#modal-root .modal-sub {
   background-color: var(--pure-white);
   border-radius: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  //z-index: 40;
 }
-
-#modal-root .close {
+/*------------------------------------------------------------------
+[  Modal button close  ]*/
+.close {
   width: 24px;
   height: 24px;
   display: block;
@@ -35,33 +36,29 @@
   cursor: pointer;
   border-radius: 12px;
 }
-#modal-root .close > span {
-  margin-top: -1px;
-  margin-left: -1px;
-}
-/* Modal sub content */
-#modal-root .modal-sub-option {
+/*------------------------------------------------------------------
+[  Modal sub content  ]*/
+.modal-sub-option {
   width: 604px;
   max-width: 100%;
   max-height: 520px;
   padding: 30px;
   min-height: 420px;
 }
-#modal-root .modal-sub-option-sub {
+.modal-sub-option-sub {
   display: flex;
   flex-direction: column;
 }
-#modal-root .modal-sub-option-sub .left {
+/*------------------------------------------------------------------
+[  Modal  content  left   ]*/
+.modal-sub-option-sub .left {
   width: 260px;
   height: 280px;
   margin-right: 24px;
-  background: var(--grey-bg-img-color);
+  background: var(--light-grey);
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-#modal-root .modal-sub-option-sub .left .image {
+.modal-sub-option-sub .left .image {
   width: 200px;
   height: 200px;
 }
@@ -69,147 +66,109 @@ img {
   border-radius: 12px;
   object-fit: cover;
 }
-#modal-root .modal-sub-option-sub .content {
+.modal-sub-option-sub .content {
   display: flex;
 }
-#modal-root .modal-sub-option-sub .right {
+/*------------------------------------------------------------------
+[  Modal  content right  ]*/
+.modal-sub-option-sub .right {
   width: calc(100% - 260px);
 }
-#modal-root .modal-sub-option-sub .right p {
+.modal-sub-option-sub .right p {
   padding: 10px 0;
 }
-
-#modal-root .right .price-quantity {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#modal-root .right .price-quantity .sale-price {
+/*------------------------------------------------------------------
+[  Modal content right top ]*/
+.price-quantity .sale-price {
   font-weight: var(--fw-bold);
   line-height: 39px;
   font-size: var(--fs-24);
   color: var(--secondary-color);
 }
-#modal-root .right .counter {
-  display: flex;
-  justify-content: space-between;
+.counter {
   width: 100px;
-  align-items: center;
   height: 30px;
 }
-#modal-root .right .counter button {
+.counter button {
   border: none;
   background-color: var(--secondary-color);
-  display: flex;
-  align-items: center;
   height: 100%;
   padding: 13px;
   cursor: pointer;
   border-radius: 4px;
   opacity: 0.95;
 }
-#modal-root .right .counter span {
+.counter span {
   font-size: var(--fs-1-4);
   pointer-events: none;
 }
-#modal-root .right .right-size {
+/*------------------------------------------------------------------
+[  Modal  content right  size]*/
+.right .right-size {
   margin: 18px 0;
 }
-#modal-root .right .right-size h5 {
-  font-weight: var(--fw-bold);
+.right .right-size h5 {
   padding-bottom: 18px;
 }
-#modal-root .right-size .option-body {
+.right-size .option-body {
   display: flex;
 }
-#modal-root .right-size .option-body .option-body-text {
-  width: 84px;
-  height: 70px;
-  margin-right: 12px;
-  border: 1px solid var(--grey-bg-img-color);
+.option-body .option-body-text {
+  width: 87px;
+  height: 71px;
+  border: 1px solid var(--grey-border);
   border-radius: 4px;
   cursor: pointer;
   font-size: var(--fs-1-4);
 }
-#modal-root .option-body-text .top {
-  text-align: center;
-  // background: var(--pur-white);
+.option-body .option-body-text:not(:last-of-type) {
+  margin-right: 12px;
+}
+.option-body-text .top {
   height: 40px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding-top: 6px;
 }
-
-#modal-root .option-body-text .price {
-  background: var(--grey-bg-img-color);
-  text-align: center;
+.option-body-text .price {
+  background: var(--grey-border);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  font-size: 12px;
   height: 30px;
   padding-top: 5px;
 }
-#modal-root .selected .top {
-  background: var(--grey-bg-img-color);
+.selected .top {
+  background: var(--grey-border);
 }
-#modal-root .selected .price {
+.selected .price {
   background-color: var(--secondary-color);
   color: var(--pure-white);
   opacity: 0.95;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
 }
-
-/* Modal sub option buy button */
-#modal-root .modal-sub-option-buy-wrapper {
+/*------------------------------------------------------------------
+[  Modal button]*/
+.modal-button-wrapper {
+  padding: 20px 0 0;
+}
+.modal-button {
   padding: 20px 0 0;
 }
 
-#modal-root .modal-sub-option-buy {
-  padding: 20px 0 0;
-}
-
-.modal-sub-option-buy-button {
+.modal-button .button {
   opacity: 0.95;
   transition: 0.35s ease-in-out;
   border: 1px solid var(--secondary-color);
   cursor: pointer;
-  font-weight: 500;
   border-radius: 4px;
-  font-size: 14px;
-  -webkit-box-pack: center;
-  justify-content: center;
   width: 100%;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
   background-color: var(--secondary-color);
-  padding: 0px;
-  color: rgb(255, 255, 255);
   overflow: hidden;
-  height: 38px;
+  height: 39px;
 }
-
-.modal-sub-option-buy-button .button-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button-text {
   font-size: var(--fs-1-4);
 }
 .icon {
-  margin-right: 5px;
-}
-
-.text .price {
-  font-weight: var(--fw-regular);
-  padding-top: 2px;
-}
-.css-vubbuv {
-  user-select: none;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  fill: currentcolor;
-  flex-shrink: 0;
-  font-size: var(--fs-1-8);
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 7px;
 }

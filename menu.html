@@ -160,99 +160,101 @@
                     </div>
                 </div>
             </section>
-            <!-- modal-root-buy-item -->
+            <!-- Modal-root-buy-item -->
             <div id="modal-root" class="modal-root" style="display: none;">
-                <div>
-                    <div class="modal" id="modal" aria-modal="true" role="dialog">
-                        <div class="modal-sub">
-                            <button class="close" type="button">
-                                <span class="white-clr">X</span>
-                            </button>
-                            <div class="modal-sub-option">
-                                <!-- Nội dung của modal ở đây -->
-                                <div class="modal-sub-option-sub black-clr">
-                                    <div class="content">
-                                        <div class="left">
-                                            <div class="image">
-                                                <img src="./assets/image/menu/menu-1.jpg" alt="">
-                                            </div>
+                <div class="modal" id="modal" aria-modal="true" role="dialog">
+                    <div class="modal-sub">
+                        <button class="close" type="button">
+                            <span class="white-clr">X</span>
+                        </button>
+                        <div class="modal-sub-option">
+                            <div class="modal-sub-option-sub black-clr">
+                                <!-- Modal content -->
+                                <div class="content">
+                                    <!-- Modal content left-->
+                                    <div class="left flex-center">
+                                        <div class="image">
+                                            <img src="./assets/image/menu/menu-1.jpg" alt="coffee-item">
                                         </div>
-                                        <div class="right">
-                                            <div class="top">
-                                                <h5>Cappuccino</h5>
-                                                <p>Cappuccino</p>
-                                                <div class="price-quantity">
-                                                    <div class="price">
-                                                        <div class="sale-price">55.000&nbsp;₫</div>
-                                                    </div>
-                                                    <div class="counter-wrapper">
-                                                        <div class="counter" data-quantity="1">
-                                                            <button type="button" class="decrease">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="10"
-                                                                    height="2px" viewBox="0 0 12 2">
-                                                                    <rect data-name="Rectangle 522" width="12"
-                                                                        height="2" rx="1" fill="#fff"></rect>
-                                                                </svg>
-                                                            </button>
-                                                            <span class="quantity">1</span>
-                                                            <button type="button" class="increase">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="10"
-                                                                    height="12px" viewBox="0 0 12 12">
-                                                                    <g id="Group_3351" data-name="Group 3351"
-                                                                        transform="translate(-1367 -190)">
-                                                                        <rect data-name="Rectangle 520" width="12"
-                                                                            height="2" rx="1"
-                                                                            transform="translate(1367 195)" fill="#fff">
-                                                                        </rect>
-                                                                        <rect data-name="Rectangle 521" width="12"
-                                                                            height="2" rx="1"
-                                                                            transform="translate(1374 190) rotate(90)"
-                                                                            fill="#fff">
-                                                                        </rect>
-                                                                    </g>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
+                                    </div>
+                                    <!-- Modal content right-->
+                                    <div class="right">
+                                        <!-- Modal content right top-->
+                                        <div class="top">
+                                            <h5>Cappuccino</h5>
+                                            <p>Cappuccino</p>
+                                            <div class="price-quantity flex-space-between">
+                                                <div class="price">
+                                                    <div class="sale-price" data-price="55000">55.000&nbsp;₫</div>
+                                                </div>
+                                                <div class="counter-wrapper">
+                                                    <div class="counter flex-space-between" data-quantity="1">
+                                                        <button type="button" class="decrease flex-space-between">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                height="2px" viewBox="0 0 12 2">
+                                                                <rect data-name="Rectangle 522" width="12" height="2"
+                                                                    rx="1" fill="#fff"></rect>
+                                                            </svg>
+                                                        </button>
+                                                        <span class="quantity">1</span>
+                                                        <button type="button" class="increase flex-space-between">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                height="12px" viewBox="0 0 12 12">
+                                                                <g id="Group_3351" data-name="Group 3351"
+                                                                    transform="translate(-1367 -190)">
+                                                                    <rect data-name="Rectangle 520" width="12"
+                                                                        height="2" rx="1"
+                                                                        transform="translate(1367 195)" fill="#fff">
+                                                                    </rect>
+                                                                    <rect data-name="Rectangle 521" width="12"
+                                                                        height="2" rx="1"
+                                                                        transform="translate(1374 190) rotate(90)"
+                                                                        fill="#fff">
+                                                                    </rect>
+                                                                </g>
+                                                            </svg>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="right-size">
-                                                <h5>Chọn kích cỡ</h5>
-                                                <div class="option-body text-center">
-                                                    <div class="option-body-text selected" id="size-S">
-                                                        <div class="top">S</div>
-                                                        <div class="price">0&nbsp;₫</div>
-                                                    </div>
-                                                    <div class="option-body-text" id="size-M">
-                                                        <div class="top">M</div>
-                                                        <div class="price">0&nbsp;₫</div>
-                                                    </div>
-                                                    <div class="option-body-text" id="size-L">
-                                                        <div class="top">L</div>
-                                                        <div class="price">0&nbsp;₫</div>
-                                                    </div>
+                                        </div>
+                                        <!-- Modal content right size-->
+                                        <div class="right-size">
+                                            <h5>Chọn kích cỡ</h5>
+                                            <div class="option-body text-center">
+                                                <div class="option-body-text selected" id="size-S">
+                                                    <div class="top">S</div>
+                                                    <div class="price">0&nbsp;₫</div>
+                                                </div>
+                                                <div class="option-body-text" id="size-M">
+                                                    <div class="top">M</div>
+                                                    <div class="price">0&nbsp;₫</div>
+                                                </div>
+                                                <div class="option-body-text" id="size-L">
+                                                    <div class="top">L</div>
+                                                    <div class="price">0&nbsp;₫</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal-sub-option-buy-wrapper">
-                                        <div class="modal-sub-option-buy">
-                                            <button aria-label="Đặt mua" class="modal-sub-option-buy-button">
-                                                <div class="button-text">
-                                                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-vubbuv"
-                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                                        data-testid="AddShoppingCartIcon">
-                                                        <path
-                                                            d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
-                                                        </path>
-                                                    </svg>
-                                                    <div class="text">
-                                                        <span>Thêm vào giỏ hàng : </span>
-                                                        <span class="price"> 1.550.000&nbsp;₫</span>
-                                                    </div>
+                                </div>
+                                <!-- Modal button -->
+                                <div class="modal-button-wrapper">
+                                    <div class="modal-button">
+                                        <button aria-label="Đặt mua" class="button flex-center white-clr">
+                                            <div class="button-text flex-center">
+                                                <svg class="icon css-vubbuv" focusable="false" aria-hidden="true"
+                                                    viewBox="0 0 24 24" data-testid="AddShoppingCartIcon">
+                                                    <path
+                                                        d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
+                                                    </path>
+                                                </svg>
+                                                <div class="text">
+                                                    <span>Thêm vào giỏ hàng: </span>
+                                                    <span class="price" id="total-price">55.000&nbsp;₫</span>
                                                 </div>
-                                            </button>
-                                        </div>
+                                            </div>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -264,38 +266,36 @@
         <!-- Footer -->
         <div class="footer">
             <div class="reponsive-container">
-                <div class="footer-about-div">
-                    <h4>About Us</h4>
+                <div class="footer-about">
+                    <h3>About Us</h3>
                     <p>Explore our passion-perfected coffee blends and savor the journey with every rich, flavorful
                         cup. Welcome to our coffee family.</p>
-                    <p class="footer-copyright-text">Copyright ©2024 <span>Techie Andrew</span> | All rights
+                    <p class="footer-copyright-text">Copyright ©2024 <span>Nghia Kieran</span> | All rights
                         reserved</p>
                 </div>
                 <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
+                    <h3>Newsletter</h3>
                     <p>Stay updates with our latest news</p>
-                    <div class="footer-search-div">
+                    <div class="footer-search">
                         <input type="search" placeholder="Enter Email">
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <button><i class="fa-solid fa-arrow-right icon-trans "></i></button>
                     </div>
                 </div>
                 <div class="footer-follow-us">
-                    <h4>Follow Us</h4>
+                    <h3>Follow Us</h3>
                     <p>Let us be social</p>
-                    <div class="footer-social-links">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <div class="footer-social-links flex-space-between">
+                        <a href="#"><i class="fa-brands fa-instagram icon-trans"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook icon-trans"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin icon-trans"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/modal-root-buy-item.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/modal-cart.js"></script>
 </body>
 
 </html>
